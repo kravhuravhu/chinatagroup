@@ -13,12 +13,12 @@
         <meta property="og:url" content="https://www.chinatagroup.co.za/technology">
         <meta property="og:type" content="website">
         <link rel="icon" href="IMAGES/icon.png" type="image/x-icon">
-        <link rel="stylesheet" href="css/styles_home.css" type="text/css"/>
-        <link rel="stylesheet" href="css/about.css" type="text/css"/>
-        <link rel="stylesheet" href="css/services_eng.css" type="text/css"/>
-        <link rel="stylesheet" href="css/drafting.css" type="text/css"/>
-        <link rel="stylesheet" href="css/procurement.css" type="text/css"/>
-        <link rel="stylesheet" href="css/tech.css" type="text/css"/>
+        <link rel="stylesheet" href="{{ asset('css/styles_home.css') }}" type="text/css"/>
+        <link rel="stylesheet" href="{{ asset('css/about.css') }}" type="text/css"/>
+        <link rel="stylesheet" href="{{ asset('css/services_eng.css') }}" type="text/css"/>
+        <link rel="stylesheet" href="{{ asset('css/drafting.css') }}" type="text/css"/>
+        <link rel="stylesheet" href="{{ asset('css/procurement.css') }}" type="text/css"/>
+        <link rel="stylesheet" href="{{ asset('css/tech.css') }}" type="text/css"/>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
