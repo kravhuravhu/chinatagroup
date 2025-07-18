@@ -1,0 +1,282 @@
+.procurement_landing {
+    background-image: url(../IMAGES/sourcing.png)!important;
+}
+
+.procurement_s {
+    & > .mini_container {
+        & > .main {
+            & > .image_container {
+                background-image: url('../IMAGES/Pictures/Services/Procurement/miningsupplies.jpg')!important;
+            }
+        }
+    }
+}
+.procurement_s2 {
+    & > .mini_container {
+        & > .main {
+            & > .image_container {
+                background-image: url('../IMAGES/Pictures/Services/Procurement/engineering-supplies.jpg')!important;
+            }
+        }
+    }
+}
+
+.expo_container {
+    width: 100%;
+    & > .main_container{
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        & > .title_container {
+            width: auto;
+            padding: 0 15px;
+            & > h3 {
+                font-size: 3.5em;
+                position: relative;
+                display: inline-block;
+                font-family: 'Raleway', 'Poppins', sans-serif;
+                padding: 20px 0;
+                text-align: center;
+                color: #001627;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 10px;
+                    background-color: #0766ad;
+                }
+            }
+        }
+        & > .subdescr {
+            width: 85%;
+            display: flex;
+            padding: 40px;
+            justify-content: center;
+            align-items: center;
+            & > p {
+                font-size: 1.2em;
+                color: #001627;
+                text-align: center;
+                font-family: 'Raleway', 'Poppins', sans-serif;
+            }
+        }
+        & > .main {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            & > .imp_container,
+            & > .ex_container {
+                width: 45%;
+                & > .description {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    flex-direction: column;
+                    & > .img_container {
+                        background-color: antiquewhite;
+                        height: 350px;
+                        width: 100%;
+                        border-radius: 40px;
+                        background-position: center!important;
+                        background-size: cover!important;
+                        background-repeat: no-repeat!important;
+                    }
+                    & > .img_exp {
+                        background-image: url(../IMAGES/Pictures/bernd-dittrich-06axNInHp-I-unsplash.jpg);
+                    }
+                    & > .img_imp {
+                        background-image: url(../IMAGES/Pictures/wolfgang-weiser--qLUgz9ZYYs-unsplash.jpg);
+                    }
+                    & > .expo_impo_title,
+                    & > .expo_impo_descrp {
+                        align-self: flex-start;
+                        margin: 5px 0;
+                        &  > p {
+                            color: #001627;
+                            font-family: 'Raleway', 'Poppins', sans-serif;
+                            font-size: 1.2em;
+                            & > strong {
+                                font-size: 1.3em;
+                                font-weight: 700;
+                                color: #0766ad;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Responsive media */
+@media screen and (max-width: 1700px) {
+
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .procurement_s {
+        & > .mini_container {
+            & > .main {
+                flex-direction: column;
+                height: auto;
+                padding: 0;
+            }
+        }
+    }
+    .procurement_s2 {
+        & > .mini_container {
+            & > .main {
+                flex-direction: column-reverse;
+                height: auto;
+                padding: 0;
+                & > ._sec_img {
+                    width: 350px;
+                }
+            }
+        }
+    }
+    .expo_container {
+        & > .main_container{
+            width: 95%;
+            & > .title_container {
+                & > h3 {
+                    font-size: 2.4em;
+                    &::after {
+                        height: 7px;
+                    }
+                }
+            }
+            & > .subdescr {
+                padding: 0;
+                & > p {
+                    font-size: 1em;
+                }
+            }
+            & > .main {
+                width: 95%;
+                flex-direction: column;
+                & > .imp_container,
+                & > .ex_container {
+                    width: 95%;
+                    & > .description {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+                        flex-direction: column;
+                        & > .expo_impo_title,
+                        & > .expo_impo_descrp {
+                            align-self: center;
+                            &  > p {
+                                font-size: 1em;
+                                padding: 7px 0;
+                                text-align: center;
+                                & > strong {
+                                    font-size: 1.5em;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        & > .expo_impo_title {
+                            order: 1;
+                        }
+                        & > .expo_impo_descrp {
+                            order: 3;
+                        }
+                        & > .img_container {
+                            order: 2;
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .procurement_s {
+        & > .mini_container {
+            & > .main {
+                flex-direction: column;
+                height: auto;
+                padding: 0;
+            }
+        }
+    }
+    .procurement_s2 {
+        & > .mini_container {
+            & > .main {
+                flex-direction: column-reverse;
+                height: auto;
+                padding: 0;
+                & > ._sec_img {
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .expo_container {
+        & > .main_container {
+            & > .title_container {
+                & > h3 {
+                    font-size: 2em;
+                    &::after {
+                        height: 6px;
+                    }
+                }
+            }
+            & > .subdescr {
+                width: 100%;
+                padding: 20px 0;
+            }
+            & > .main {
+                & > .imp_container,
+                & > .ex_container {
+                    width: 100%;
+                    & > .description {
+                        padding: 9px 0;
+                        & > .expo_impo_title,
+                        & > .expo_impo_descrp {
+                            &  > p {
+                                font-size: 1em;
+                                & > strong {
+                                    font-size: 1.2em;
+                                }
+                            }
+                        }
+                        & > .img_container {
+                            height: 235px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_qoute_1 {
+        & > .container {
+            width: 95%;
+            & > .descrip {
+                margin: 0;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 320px) {
+
+}

@@ -1,0 +1,80 @@
+.drafting_landing {
+    background-image: url('../IMAGES/platform-on-the-sea-when-night-falls.jpg')
+}
+.drafting_services {
+    & > .mini_container {
+        & > .main {
+            & > .image_container {
+                background-image: url('../IMAGES/Pictures/Services/drafting/11.jpg')!important;
+            }
+        }
+    }
+}
+
+.draft_section2 {
+    & > .mini_container {
+        & > .main {
+            & > ._sec_img {
+                width: 25%;
+            }
+            & > ._sec_des {
+                width: 60%;
+            }
+        }
+    }
+}
+
+.footer_qoute_1 {
+    background-color: #ffffff;
+    & > .container {
+        & > .descrip {
+            color: #001627;
+            &::after {
+                display: none;
+            }
+            & > strong {
+                line-height: 2;
+                color: #0766ad;
+            }
+        }
+    }
+} 
+
+/* Responsive media */
+@media screen and (max-width: 1700px) {
+
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .drafting_services {
+        & > .mini_container {
+            & > .main {
+                & > .description {
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .draft_section2 {
+        & > .mini_container {
+            & > .main {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}

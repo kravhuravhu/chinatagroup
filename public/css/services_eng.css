@@ -1,0 +1,778 @@
+.engin_landing {
+    background-image: url('../IMAGES/Pictures/Services/Engineering/Machining/image.webp');
+}
+
+.service_landing {
+    height: 75vh;
+    position: relative;
+    & > .transparent {
+        & > h3:after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            height: 10px;
+            background-color: #0766ad;
+        }
+        & > h3, 
+        & > p {
+            margin: 30px 0;
+        }
+    }
+}
+
+.main_cont {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    & > .mini_container {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        & > .title_container {
+            height: 100px;
+            width: 100%;
+            & > h3 {
+                font-size: 3.5em;
+                position: relative;
+                display: inline-block;
+                font-family: 'Raleway', 'Poppins', sans-serif;
+                padding: 20px 0;
+                color: #0766ad;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 10px;
+                    background-color: #001627;
+                }
+            }
+        }
+        & > .main {
+            width: 100%;
+            display: flex;
+            padding: 20px 0;
+            flex-direction: row;
+            justify-content: space-between;
+            & > .description {
+                width: 60%;
+                & > p {
+                    color: #001627;
+                    font-size: 1.2em;
+                    font-weight: 400;
+                    & > strong {
+                        color: #0766ad;
+                        font-weight: 700;
+                        line-height: 2.5;
+                    }
+                }
+                & > ul {
+                    list-style-type: disc;
+                    padding-left: 20px;
+                    & > li {
+                        font-family: 'Raleway', 'Poppins', sans-serif;
+                        font-size: 1.2em;
+                        color: #001627;
+                        & > b {
+                            font-weight: 500;
+                            color: #0766ad;
+                        }
+                    }
+                }
+            }
+            & > .image_container {
+                width: 35%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                background-size: cover;
+                background-image: url("../IMAGES/Pictures/Services/Engineering/Fabrication/Image1.webp");
+                & > img {
+                    object-fit: contain;
+                    position: relative;
+                    width: 75%;
+                }
+            }
+        }
+        & > .cta-button {
+            width: 100%;
+            display: flex;
+            height: 100px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            & > .button {
+                width: fit-content;
+                height: fit-content;
+                background-color: #0766ad;
+                border-radius: 50px;
+                padding: 20px 17px;
+                cursor: pointer;
+                & > p {
+                    color: #ededed;
+                    font-family: 'Raleway', 'Poppins', sans-serif;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+.machining_container {
+    width: 100%;
+    background-color: #e4e4e4;
+    & > .main_machining {
+        width: 75%;
+        margin: 0 auto;
+        & > .title_container {
+            width: fit-content;
+            margin: 0 auto;
+            & > h3 {
+                font-size: 3.9em;
+                position: relative;
+                display: inline-block;
+                font-family: 'Raleway', 'Poppins', sans-serif;
+                padding: 20px 0;
+                text-align: center;
+                color: #001627;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 10px;
+                    background-color: #0766ad;
+                }
+            }
+        }
+        & > .descrip {
+            padding: 25px 0;
+            width: 85%;
+            margin: 0 auto;
+             & > p {
+                font-size: 1.2em;
+                font-family: 'Raleway', 'Poppins', sans-serif;
+                color: #001627;
+                text-align: center;
+            }
+        }
+        & > .gal_container {
+            width: 100%;
+            & > .grid {
+                display: grid;
+                grid-template-columns: 500px 500px;
+                grid-template-rows: 300px 300px;
+                grid-gap: 20px;
+                padding: 30px;
+                justify-self: center;
+                align-self: center;
+                & > .list {
+                    background-color: cadetblue;
+                    border-radius: 100px;
+                    background-size: cover!important;
+                    background-repeat: no-repeat!important;
+                    background-position: center!important;
+                }
+                & > .list:nth-child(1),
+                & > .list:nth-child(4) {
+                    height: 100%;
+                    width: 70%;
+                    background-color: red;
+                    justify-self: flex-end;
+                }
+                & > .list:nth-child(1) {
+                    background-image: url(../IMAGES/Pictures/Services/Engineering/Machining/image.webp);
+                }
+                & > .list:nth-child(2) {
+                    background-image: url(../IMAGES/Pictures/Services/Engineering/Machining/Machining2.jpg);
+                }
+                & > .list:nth-child(3) {
+                    background-image: url(../IMAGES/Pictures/Services/Engineering/Machining/machining4.jpg);
+                }
+                & > .list:nth-child(4) {
+                    justify-self: flex-start;
+                    background-image: url(../IMAGES/Pictures/Services/Engineering/Machining/Machining3.jpg);
+                }
+            }
+        }
+    }
+}
+
+.plasma_container {
+    & > .mini_container {
+        & > .main {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 25px;
+            justify-content: space-between;
+            & > .description {
+                width: 60%;
+                margin: 0 15px;
+                & > .title_container {
+                    /* height: 80px; */
+                    padding: 20px 0;
+                    width: 100%;
+                    & > h3 {
+                        font-size: 3.5em;
+                        position: relative;
+                        display: inline-block;
+                        font-family: 'Raleway', 'Poppins', sans-serif;
+                        padding:  0;
+                        color: #0766ad;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -10px;
+                            left: 0;
+                            width: 100%;
+                            height: 7px;
+                            background-color: #001627;
+                        }
+                    }
+                }     
+            }
+            & > .image_container {
+                width: 35%;
+                margin: 0 15px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url(../IMAGES/Pictures/Services/Engineering/PlasmaCutting_CNC/plasma-cutting-01.jpg);
+            }
+        }
+    }
+}
+
+.footer_qoute {
+    background-color: #0766ad;
+    width: 100%;
+    padding: 30px;
+    & > .container {
+        width: 60%;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        & > .descrip {
+            font-family: 'Raleway', 'Poppins', sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 20px;
+            color: #ededed;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                justify-self: center;
+                align-self: center;
+                height: 2px;
+                background-color: #ededed;
+            }
+        }
+        & > .button {
+            height: fit-content;
+            width: fit-content;
+            padding: 20px 25px;
+            border-radius: 50px;
+            text-align: center;
+            margin: 15px;
+            cursor: pointer;
+            background-color: #ededed;
+            & > a {
+                font-family: 'Raleway', 'Poppins', sans-serif;
+                font-size: 1.2em;
+                color: #001627;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.footer {
+    margin: 20px 0 0 0;
+    background-color: #ffffff;
+    & > .main_container {
+        & > .fo_logo,
+        & > .fo_cert {
+            & > p {
+                color: #001627;
+            }
+        }
+        & > .fo_links,
+        & > .fo_contact,
+        & > .fo_cert {
+            color: #001627;
+            & > ul,
+            & > p {
+                & > a {
+                text-decoration: none;
+                margin: 3px 0;
+                color: #001627;
+                }
+                & > a:hover {
+                color: #4c4e50;
+                }
+            }
+        }
+    }
+    & > .rights {
+        background-color: #ededed;
+        & > p {
+        color: #001627;
+        }
+    }
+}
+
+/* Responsive media */
+@media screen and (max-width: 1700px) { 
+    .machining_container {
+        & > .main_machining {
+            width: 80%;
+            & > .title_container {
+                & > h3 {
+                    font-size: 3.5em;
+                }
+            }
+            & > .descrip {
+                width: 100%;
+            }
+            & > .gal_container {
+                width: 100%;
+                & > .grid {
+                    grid-template-columns: 400px 400px;
+                    grid-template-rows: 250px 250px;
+                    & > .list {
+                        border-radius: 70px;
+                    }
+                    & > .list:nth-child(4) {
+                        justify-self: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .main_cont {
+        & > .mini_container {
+            width: 85%;
+            & > .main {
+                & > .description {
+                    & > p {
+                        & > strong {
+                            line-height: 2;
+                        }
+                    }
+                }
+            }
+            & > .cta-button {
+                & > .button {
+                    padding: 17px 15px;
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 1200px) {
+    .main_cont {
+        padding: 10px 0;
+        & > .mini_container {
+            width: 85%;
+            & > .title_container {
+                & > h3 {
+                    font-size: 3em;
+                    padding: 15px 0;
+                    &::after {
+                        height: 7px;
+                    }
+                }
+            }
+            & > .main {
+                padding: 15px 0;
+                & > .description {
+                    & > p {
+                        font-size: 1em;
+                        & > strong {
+                            line-height: 1.5;
+                        }
+                    }
+                    & > ul {
+                        list-style-type: disc;
+                        padding-left: 20px;
+                        & > li {
+                            font-size: 1em;
+                        }
+                    }
+                }
+                & > .image_container {
+                    & > img {
+                        width: 75%;
+                    }
+                }
+            }
+            & > .cta-button {
+                & > .button {
+                    padding: 17px;
+                    & > p {
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+    .machining_container {
+        & > .main_machining {
+            & > .title_container {
+                & > h3 {
+                    font-size: 3em;
+                    &::after {
+                        height: 7px;
+                    }
+                }
+            }
+            & > .descrip {
+                width: 90%;
+                 & > p {
+                    font-size: 1em;
+                }
+            }
+            & > .gal_container {
+                width: 100%;
+                & > .grid {
+                    grid-template-columns: 300px 300px;
+                    grid-template-rows: 200px 200px;
+                    grid-gap: 15px;
+                    padding: 25px;
+                    & > .list {
+                        border-radius: 50px;
+                    }
+                    & > .list:nth-child(4) {
+                        justify-self: flex-start;
+                    }
+                }
+            }
+        }
+    }
+    .plasma_container {
+        & > .mini_container {
+            & > .main {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                padding: 20px;
+                justify-content: center;
+                & > .description {
+                    margin: 0 15px;
+                    & > .title_container {
+                        height: fit-content;
+                        padding: 15px 0;
+                        & > h3 {
+                            font-size: 3em;
+                            &::after {
+                                height: 7px;
+                            }
+                        }
+                    }     
+                }
+                & > .image_container {
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+    .footer_qoute {
+        padding: 20px;
+        & > .container {
+            width: 85%;
+            & > .descrip {
+                font-size: 1em;
+            }
+            & > .button {
+                padding: 10px 15px;
+                & > a {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service_landing {
+        height: 60vh;
+        position: relative;
+        & > .transparent {
+            & > h3 {
+                font-size: 2.7em;
+                &:after {
+                    height: 7px;
+                }
+            }
+            & > p {
+                margin: 30px 0;
+                font-size: 1em;
+            }
+        }
+    }     
+    .main_cont { 
+        & > .mini_container {
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            & > .title_container {
+                width: fit-content;
+                & > h3 {
+                    font-size: 2.4em;
+                    text-align: center;
+                }
+            }
+            & > .main {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                & > .description {
+                    width: 95%;
+                    & > p {
+                        text-align: center;
+                        font-size: 1em;
+                        margin: 5px 0;
+                    }
+                    & > ul {
+                        & > li {
+                            list-style-type: none;
+                            text-align: center;
+                            font-size: 1em;
+                        }
+                    }
+                }
+                & > .image_container {
+                    padding: 20px;
+                    width: 350px;
+                    height: 250px;
+                }
+            }
+            & > .cta-button {
+                & > .button {
+                    padding: 15px;
+                    & > p {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .machining_container {
+        & > .main_machining {
+            width: 95%;
+            & > .title_container {
+                & > h3 {
+                    font-size: 2.4em;
+                    &::after {
+                        height: 7px;
+                    }
+                }
+            }
+            & > .descrip {
+                width: 95%;
+                 & > p {
+                    font-size: 1em;
+                }
+            }
+            & > .gal_container {
+                & > .grid {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    grid-gap: 20px;
+                    padding: 0;
+                    & > .list {
+                        border-radius: 20px;
+                        width: 300px;
+                        height: 200px;
+                    }
+
+                }
+            }
+        }
+    }
+    .plasma_container {
+        & > .mini_container {
+            & > .main {
+                flex-direction: column-reverse;
+                height: auto;
+                padding: 0;
+                & > .description {
+                    & > .title_container {
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px 0;
+                        & > h3 {
+                            font-size: 2.4em;
+                            text-align: center;
+                        }
+                    }     
+                }
+                & > .image_container {
+                    width: 350px;
+                    height: 250px;
+                    margin: 25px;
+                }
+            }
+        }
+    }
+    .footer_qoute {
+        padding: 5px;
+        & > .container {
+            width: fit-content;
+            & > .descrip {
+                font-size: 1em;
+            }
+            & > .button {
+                & > a {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service_landing {
+        position: relative;
+        & > .transparent {
+            & > h3 {
+                font-size: 2em;
+                text-align: center;
+                &:after {
+                    height: 6px;
+                    bottom: -20px;
+                }
+            }
+            & > p {
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+    .main_cont { 
+        & > .mini_container {
+            & > .title_container {
+                height: fit-content;
+                & > h3 {
+                    font-size: 2.4em;
+                }
+            }
+            & > .main {
+                & > .description {
+                    width: 95%;
+                    & > ul {
+                        padding: 0;
+                    }
+                }
+                & > .image_container {
+                    padding: 15px;
+                    width: 90%;
+                }
+            }
+            & > .cta-button {
+                & > .button {
+                    padding: 15px;
+                    & > p {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .machining_container {
+        & > .main_machining {
+            width: 95%;
+            & > .title_container {
+                & > h3 {
+                    font-size: 2em;
+                    &::after {
+                        height: 7px;
+                    }
+                }
+            }
+            & > .descrip {
+                width: 95%;
+                 & > p {
+                    font-size: 1em;
+                }
+            }
+            & > .gal_container {
+                & > .grid {
+                    & > .list {
+                        width: 270px;
+                        height: 170px;
+                    }
+
+                }
+            }
+        }
+    }
+    .plasma_container {
+        & > .mini_container {
+            & > .main {
+                & > .description {
+                    & > .title_container {
+                        & > h3 {
+                            font-size: 2em;
+                        }
+                    }     
+                }
+                & > .image_container {
+                    width: 90%;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .service_landing {
+        position: relative;
+        & > .transparent {
+            & > h3 {
+                font-size: 1.7em;
+            }
+        }
+    }
+    .machining_container {
+        & > .main_machining {
+            width: 95%;
+            & > .title_container {
+                & > h3 {
+                    font-size: 2.4em;
+                }
+            }
+            & > .gal_container {
+                & > .grid {
+                    & > .list {
+                        width: 230px;
+                        height: 170px;
+                    }
+
+                }
+            }
+        }
+    }
+}

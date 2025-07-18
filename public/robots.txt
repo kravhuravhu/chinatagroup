@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /mailHandler/
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /composer.json
+Disallow: /composer.lock
+
+Sitemap: https://www.chinatagroup.co.za/sitemap.xml

@@ -1,0 +1,149 @@
+.tech_landing {
+    background-image: url(../IMAGES/tech/marvin-meyer-SYTO3xs06fU-unsplash.jpg)!important;
+}
+ 
+.container {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+#about p{
+text-align: center;
+padding: 10px;
+}
+
+.container {
+    h3, h2 {
+        color: #0766ad;
+        padding: 20px;
+        font-size: 2.7em;
+        font-family: 'Raleway', 'Poppins', sans-serif;
+        width: fit-content;
+        &::after {
+            height: 8px;
+            width: 100%;
+            display: block;
+            content: '';
+            left: 0;
+            top: -10px;
+            background-color: #0766ad;
+        }
+    }
+    h2 {
+        font-size: 2em;
+        &::after {
+            display: none;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #0766ad;
+}
+.services, .industries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-item, .industry-item {
+    background: #ededed;
+    margin: 10px;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    box-sizing: border-box;
+}
+.service-item img, .industry-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 5px;
+    justify-self: center;
+}
+.tech_container {
+    /* max-width: 80%; */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.tech_container h2{
+    color:#0766ad ;
+    text-align: center;
+    justify-self: center;
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+/* h2 for solutions sub-titles */
+.container > #it-solutions > .services > .service-item > h2,
+.container > #ot-solutions > .services > .service-item > h2,
+.container > .tech_container > .features > .feature > h2,
+.container > #industries > .industries > .industry-item > h2 {
+    color:#0766ad ;
+    text-align: center;
+    justify-self: center;
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+/* h2 for solutions sub-titles */
+.container > #it-solutions > .services > .service-item > p,
+.container > #ot-solutions > .services > .service-item > p,
+.container > .tech_container > .features > .feature > p,
+.container > #industries > .industries > .industry-item > p {
+    text-align: center;
+    justify-self: center;
+    font-size: 1.1em;
+}
+
+
+h1 {
+    text-align: center;
+    color: #0766ad;
+    font-size:  3em;
+}
+ 
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.feature {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+.feature i {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+.feature h2 {
+    font-size: 1.2em;
+    color: #0766ad;
+}
+.feature p {
+    font-size: 1em;
+    color: #666;
+}
+/* Custom icon colors */
+.icon-it {
+    color: #FF5733;
+}
+.icon-custom {
+    color: #33FF57;
+}
+.icon-security {
+    color: #f8e007;
+}
+
+
+@media screen and (max-width: 768px) {
+    .tech_container {
+        & > .features {
+            flex-direction: column;
+        }
+    }
+}

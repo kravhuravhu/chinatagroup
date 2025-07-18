@@ -1,0 +1,1548 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  position: relative;
+}
+/* Navigation bar*/
+.nav_container {
+  width: 100%;
+  height: fit-content;
+  background-color: #ffffff;
+  & > div {
+    width: 75%;
+    margin: 0 auto;
+    /* Navigation bar */
+    & > nav {
+     .nav-links {
+        & > .links {
+          & > a,
+          & > .dropdown > a {
+            color: #001627;
+          }
+          & > .quote-button > a {
+            color: #ededed;
+          }
+          & > .quote-button {
+            background-color: #0766ad;
+            color: #001627!important;
+          }
+          & > .quote-button:hover {
+            background-color: #053a71f5;
+            transition: background-color .3s ease-in-out;
+          }
+          & > .dropdown {
+            & > .dropdown-menu > a,
+            & > .sub-dropdown > a {
+              color: #ededed;
+            }
+            & > .dropdown-menu,
+            & > .dropdown-menu > .sub-dropdown {
+              background-color: #0b1a2461;
+              & > a {
+                color: #ededed;
+                &:hover {
+                  background-color: #0b1a2485;
+                }
+              }
+            }
+            & > .dropdown-menu > .sub-dropdown {
+              top: 25%;
+              left: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* About landing container title */
+.abt_landing {
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-image: url(../IMAGES/Pictures/Homepage/OurVision/Ourvision2.jpg);
+
+  & > .transparent {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > h3,
+    & > p {
+      font-size: 4.5em;
+      position: relative;
+      margin: 7px 0;
+      font-family: 'Raleway', 'Poppins', sans-serif;
+      color: #d6d6d6;
+    }
+    & > p {
+      font-size: 1.2em!important;
+      & > span > img {
+        height: 10px;
+        margin: 0 7px;
+        object-fit: contain;
+        position: relative;
+        filter: invert();
+      }
+    }
+  }
+}
+
+/* About overview intro */
+.abt_intro {
+  width: 45%;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+  & > div > p {
+    font-family: 'Raleway', 'Poppins', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #001627;
+  }
+}
+
+/* Our story section | Who Are We container style */
+.stry_container {
+  width: 80%;
+  & > .stry_container_in > .image_container {
+    justify-content: flex-start!important;
+    align-items: flex-end;
+  }
+}
+
+/* Our story section 2 */
+.addition_dit {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  & > .ddimg_container {
+    width: 40%;
+    & > img {
+      height: 350px;
+      object-fit: cover;
+      position: absolute;
+    }
+    & > #img1 {
+      margin: 60px 0 0 60px;
+    }
+  }
+  & > .story_container {
+    width: 60%;
+    padding: 30px 20px;
+    & > div > p {
+      font-size: 1.2em;
+      text-align: right;
+      color: #001627;
+      font-family: 'Raleway', 'Poppins', sans-serif;
+    }
+    & > div {
+      & > ul > li {
+        font-size: 1.2em;
+        list-style-type: none;
+        font-family: 'Raleway', 'Poppins', sans-serif;
+        color: #001627;
+        text-align: right;
+        & > b {
+          color: #0766ad;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+/* Core values */
+.val_container {
+  padding: 20px;
+  background-color: #0766ad;
+  width: 100%;
+
+  & > .val_in_cont {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+    & > .values {
+      width: 50%;
+      display: grid;
+      grid-template-columns: 350px 350px;
+      grid-template-rows: 250px 250px;
+      grid-gap: 10px;
+      & > .cr {
+        background-color: #f1f1f1;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway', 'Poppins', sans-serif;
+        & > h5 {
+          color: #0766ad;
+          font-size: 1.9em;
+          margin: 7px 0;
+          text-align: center;
+          font-weight: 700;
+        }
+        & > p {
+          text-align: center;
+          margin: 7px 0;
+          font-size: 1.2em;
+          color: #001627;
+        }
+      }
+    }
+    & > .val_title {
+      height: 200px;
+      width: 30%;
+      & > h3 {
+        font-size: 3.5em;
+        position: relative;
+        display: inline-block;
+        font-family: 'Raleway', 'Poppins', sans-serif;
+        padding: 20px 0;
+        color: #f1f1f1;
+      }
+      & > h3::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-color: #f1f1f1;
+      }
+    }
+  }
+}
+
+/* Vision and Mission */
+.vismis_container {
+  width: 100%;
+  padding: 40px 0;
+  & > .main_vimi {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80%;
+    & > .vision_,
+    & > .mission_ {
+      width: 50%;
+      padding: 30px 30px 0 30px;
+      & > h3 {
+        font-size: 3.5em;
+        position: relative;
+        display: inline-block;
+        font-family: 'Raleway', 'Poppins', sans-serif;
+        padding: 20px 0;
+        color: #001627;
+      }
+      & > h3::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-color: #0766ad;
+      }
+      & > p {
+        font-size: 1.2em;
+        padding: 20px 0;
+        font-family: 'Raleway', 'Poppins', sans-serif;
+        color: #001627;
+      }
+      & > ul > li {
+        font-size: 1.2em;
+        padding: 7px 0;
+        margin: -10px 15px;
+        font-family: 'Raleway', 'Poppins', sans-serif;
+        color: #001627;
+        & > b {
+          color: #0766ad;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  & > .extra_vimi {
+    width: 50%;
+    margin: 0 auto;
+    padding: 25px 0;
+    & > p {
+      font-size: 1.2em;
+      text-align: center;
+      font-family: 'Raleway', 'Poppins', sans-serif;
+      color: #001627;
+    }
+  }
+}
+
+/* Industrial Solutions | H3 style from Who Are We */
+.ind_container {
+  width: 100%;
+  padding: 0;
+  & > .ind_ {
+     margin: 0 auto;
+     align-items: center;
+     flex-direction: column;
+     padding: 0;
+     & > .title_container {
+       width: auto;
+     }
+     & > .solutions_cont {
+      margin: 0 auto;
+      padding: 50px 0;
+       & > .grid {
+         display: grid;
+         grid-template-columns: 470px 470px;
+         grid-template-rows: 320px 320px;
+         grid-gap: 60px;
+         justify-items: center;
+         place-items: center;
+         & > .li {
+           background-color: #e4e4e4;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+           padding: 0 25px;
+           & > .container {
+             & > div {
+               margin: 56px 20px;
+             }
+             & > .lil_title {
+               font-weight: 700;
+             }
+             & > .lil_title,
+             & > .description {
+               font-size: 1.5em;
+               color: #001627;
+               width: fit-content;
+               font-family: 'Raleway', 'Poppins', sans-serif;
+             }
+             & > .lil_title::after {
+               content: '';
+               position: absolute;
+               bottom: -25px;
+               left: 0;
+               width: 100%;
+               height: 3px;
+               background-color: #0766ad;
+             }
+             & > .description {
+              font-size: 1.2em!important;
+             }
+           }
+         }
+         & > .li::after {
+           content: '4';
+           width: 65px;
+           height: 65px;
+           display: none; /* was flex */
+           background-color: #0766ad;
+           border-radius: 50%;
+           position: absolute;
+           left: 0;
+           z-index: 1;
+           justify-content: center;
+           align-items: center;
+           font-size: 1.2em;
+           font-weight: 500;
+           font-family: 'Raleway', 'Poppins', sans-serif;
+           color: #ededed;
+           transform: translateX(-50%);
+         }
+          & > .li:nth-child(1)::after {
+          content: '4';
+          }
+          
+          & > .li:nth-child(2)::after {
+            content: '1';
+          }
+          
+          & > .li:nth-child(3)::after {
+            content: '2';
+          }
+          
+          & > .li:nth-child(4)::after {
+            content: '3';
+          }
+        
+         & > .mid_cr {
+           position: absolute;
+           height: 200px;
+           width: 200px;
+           background-color: #0766ad;
+           z-index: 1;
+           left: 40%;
+           top: 37%;
+           border-radius: 50%;
+         }
+       }
+     }
+   }
+}
+
+/* Certifications & Compliance */
+.cert_container {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #e4e4e4;
+  background-image: url(../IMAGES/ISO_Certified_Badge.png);
+  & > .transparent {
+    width: 100%;
+    background-color: #e7e7e7eb;
+    & > .corner_icon {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      & > img {
+        width: 300px;
+        object-fit: contain;
+        position: relative;
+        opacity: .06;
+      }
+    }
+    & > .main_cert {
+      margin: 0 auto;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      & > .sub_title {
+        width: fit-content;
+        & > p {
+          font-size: 1em;
+          font-family: 'Raleway', 'Poppins', sans-serif;
+          color: #001627;
+          text-align: center;
+        }
+      }
+      & > .sub_description {
+        width: 65%;
+        padding: 20px;
+        & > p {
+          font-size: 1.2em;
+          font-family: 'Raleway', 'Poppins', sans-serif;
+          color: #001627;
+          text-align: center;
+        }
+      }
+      & > .sub_description_appr > p {
+        font-size: 1em;
+      }
+      & > .title_container {
+        & > h3 {
+          font-size: 3.5em;
+          position: relative;
+          display: inline-block;
+          font-family: 'Raleway', 'Poppins', sans-serif;
+          padding: 20px 0;
+          color: #001627;
+        }
+        & > h3::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 10px;
+          background-color: #0766ad;
+        }
+      }
+      & > .container {
+        & > .grid {
+          display: grid;
+          grid-gap: 20px;
+          grid-template-columns: 470px 470px;
+          grid-template-rows: 300px 300px;
+          justify-self: center;
+          & > .li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            & > .cr_comp {
+              & > img {
+                height: 150px;
+                border-radius: 50%;
+              }
+            }
+            & > .title_comp {
+              height: 50px;
+              width: 100%;
+              & > h4 {
+                font-size: 1.3em;
+                font-family: 'Raleway', 'Poppins', sans-serif;
+                color: #001627;
+              }
+            }
+            /* & > .description_comp {
+              position: relative;
+              height: 100px;
+              width: 100%;
+            
+              & > p {
+                color: #001627;
+                font-size: 1em;
+                font-family: 'Raleway', 'Poppins', sans-serif;
+                text-align: center;
+            
+                & > span {
+                  color: #0766ad;
+            
+                  &:hover + .popup {
+                    display: block;
+                    cursor: progress;
+                  }
+                }
+              }
+            
+              & > .popup {
+                display: none;
+                position: absolute;
+                bottom: 10%;
+                left: 0;
+                background: #fff;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 80px;
+                font-size: 14px;
+                z-index: 100;
+            
+                &::before {
+                  content: '';
+                  position: absolute;
+                  bottom: -10px;
+                  left: 10px;
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: transparent transparent #ccc transparent;
+                }
+            
+                &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: -8px;
+                  left: 10px;
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: transparent transparent #fff transparent;
+                }
+              }
+            } */
+            .description_comp {
+              position: relative;
+              height: 100px;
+              width: 100%;
+              cursor: pointer;
+            
+              & > p {
+                color: #001627;
+                font-size: 1em;
+                font-family: 'Raleway', 'Poppins', sans-serif;
+                text-align: center;
+                & > i > b {
+                  color: #0766ad;
+                }
+            
+                & > span {
+                  color: #0766ad;
+                }
+              }
+            
+              & > .popup {
+                display: none;
+                position: absolute;
+                bottom: 10%;
+                left: 60%;
+                background: #fff;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 320px;
+                font-size: 1em;
+                z-index: 100;
+                & > p > b {
+                  font-size: .9em;
+                  color: #0766ad;
+                  font-weight: 500;
+                }
+            
+                &::before {
+                  content: '';
+                  position: absolute;
+                  bottom: -10px;
+                  left: 10px;
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: transparent transparent #ccc transparent;
+                }
+                &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: -8px;
+                  left: 10px;
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: transparent transparent #fff transparent;
+                }
+              }
+            
+              &:hover > .popup {
+                display: block;
+                cursor: progress;
+              }
+            }
+                        
+            & > .cr_comp,
+            & > .title_comp,
+            & > .description_comp {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive media */
+@media screen and (max-width: 1700px) {
+  /* Navigation bar*/
+  .nav_container {
+    & > div {
+      width: 85%;
+      margin: 0 auto;
+      /* inherit other stuff from home */
+    }
+  }
+
+  /* About landing container title */
+  .abt_landing {
+    height: fit-content;
+    & > .transparent {
+      padding: 50px 0;
+      & > h3,
+      & > p {
+        font-size: 3.7em;
+      }
+    }
+  }
+
+  /* About overview intro */
+  .abt_intro {
+    width: 50%;
+  }
+
+  /* Our story section 2 */
+  .addition_dit {
+    width: 85%;
+    height: fit-content;
+    & > .ddimg_container {
+      width: 40%;
+      & > img {
+        height: 280px;
+      }
+    }
+    & > .story_container {
+      padding: 30px 15px;
+    }
+  }
+
+  /* Core values */
+  .val_container {
+    & > .val_in_cont {
+      justify-content: space-between;
+      & > .values {
+        width: fit-content;
+        grid-gap: 20px;
+      }
+      & > .val_title {
+        width: fit-content;
+      }
+    }
+  }
+
+  /* Vision and Mission */
+  .vismis_container {
+    padding: 10px 0;
+    & > .main_vimi {
+      width: 85%;
+      & > .vision_,
+      & > .mission_ {
+        & > h3 {
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /* Navigation bar*/ 
+  /* inherit other stuff from home */
+
+  /* About landing container title | good */
+
+  /* About overview intro */
+  .abt_intro {
+    width: 65%;
+    & > div > p {
+      font-size: 1.1em;
+    }
+  }
+
+  /* Our story section | Who Are We container style(ab_vo container) */
+  .stry_container {
+    & > .stry_container_in > .image_container {
+        justify-content: center !important;
+        align-items: center;
+    }
+  }
+
+  /* Our story section 2 */
+  .addition_dit {
+    height: fit-content;
+    & > .ddimg_container {
+      & > img {
+        height: 230px;
+      }
+      & > #img1 {
+        margin: 40px 0 0 40px;
+      }
+    }
+  }
+
+  /* Core values */
+  .val_container {
+    & > .val_in_cont {
+      width: 90%;
+      & > .values {
+        grid-gap: 10px;
+        & > .cr {
+          & > h5 {
+            font-size: 1.7em;
+          }
+          & > p {
+            font-size: 1.1em;
+          }
+        }
+      }
+      & > .val_title {
+        & > h3 {
+          font-size: 3.3em;
+          &::after {
+            height: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Vision and Mission | Good*/
+
+  /* Industrial Solutions | H3 style from Who Are We */
+  .ind_container {
+    & > .ind_ {
+      & > .solutions_cont {
+        padding: 35px 0;
+        & > .grid {
+          grid-template-columns: 400px 400px;
+          grid-template-rows: 300px 300px;
+          grid-gap: 15px;
+          & > .li {
+            padding: 0 15px;
+            & > .container {
+              & > .lil_title,
+              & > .description {
+                font-size: 1.5em;
+              }
+              & > .description {
+                font-size: 1.1em!important;
+              }
+              & > div {
+                margin: 40px 20px;
+              }
+            }
+          }
+          & > .li::after {
+            font-size: 1.3em;
+          }
+          & > .mid_cr {
+            height: 140px;
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Certifications & Compliance */
+  .cert_container {
+    & > .transparent {
+      & > .main_cert {
+        & > .sub_description {
+          width: 85%;
+          & > p {
+            font-size: 1.1em;
+          }
+        }
+        & > .sub_description_appr > p {
+          font-size: 1em;
+        }
+        & > .title_container {
+          & > h3 {
+            font-size: 3.3em;
+          }
+          & > h3::after {
+            height: 8px;
+          }
+        }
+        & > .container {
+          width: 85%;
+          & > .grid {
+            grid-gap: 15px;
+            grid-template-columns: 440px 440px;
+            grid-template-rows: 260px 260px;
+            & > .li {
+              padding: 15px;
+              & > .cr_comp {
+                & > img {
+                  height: 130px;
+                }
+              }
+              & > .title_comp {
+                & > h4 {
+                  font-size: 1.2em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Navigation bar*/
+  .nav_container {
+    & > div {
+      width: 95%;
+      /* inherit other stuff from home */
+    }
+  }
+  /* About landing container title | Good */
+
+  /* About overview intro */
+  .abt_intro {
+    & > div > p {
+      font-size: 1em;
+    }
+  }
+
+  /* Our story section | Who Are We container style(ab_vo container) */
+
+  /* Our story section 2 */
+  .addition_dit {
+    height: fit-content;
+    width: 90%;
+    & > .ddimg_container {
+      & > img {
+        height: 180px;
+      }
+      & > #img1 {
+          margin: 20px 0 0 20px;
+      }
+    }
+    & > .story_container {
+      & > div > p,
+      & > div > ul > li {
+        font-size: 1em;
+      }
+    }
+  }
+
+  /* Core values */
+  .val_container {
+    padding: 10px;
+    & > .val_in_cont {
+      width: 90%;
+      padding: 0;
+      flex-direction: column-reverse;
+      & > .values {
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 200px;
+        & > .cr {
+          padding: 10px;
+          & > h5 {
+            font-size: 1.4em;
+          }
+          & > p {
+            font-size: 1.1em;
+          }
+        }
+      }
+      & > .val_title {
+        height: fit-content;
+        padding: 10px 0;
+        & > h3 {
+          font-size: 3em;
+          padding: 10px 0;
+          &::after {
+            height: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Vision and Mission */
+  .vismis_container {
+    & > .main_vimi {
+      & > .vision_,
+      & > .mission_ {
+        & > h3 {
+          font-size: 3em;
+          &::after {
+            height: 7px;
+          }
+        }
+        & > p,
+        & > ul > li {
+          font-size: 1em;
+        }
+      }
+    }
+    & > .extra_vimi {
+      width: 85%;
+      & > p {
+        font-size: 1em;
+      }
+    }
+  }
+
+  /* Industrial Solutions | H3 style from Who Are We */
+  .ind_container {
+    & > .ind_ {
+      & > .solutions_cont {
+        width: 100%;
+        padding: 0;
+        & > .grid {
+          grid-template-columns: 350px 350px;
+          grid-gap: 20px;
+          padding: 40px 0;
+          justify-content: center;
+          height: fit-content;
+          & > .li {
+            padding: 0 10px;
+            & > .container {
+              & > .lil_title,
+              & > .description {
+                font-size: 1.35em;
+              }
+              & > .description {
+                font-size: 1.1em!important;
+              }
+            }
+          }
+          & > .li::after {
+            font-size: 1.3em;
+          }
+          & > .mid_cr {
+            height: 130px;
+            width: 130px;
+            top: auto;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  /* Certifications & Compliance */
+  .cert_container {
+    & > .transparent {
+      & > .main_cert {
+        & > .sub_description {
+          & > p {
+            font-size: 1em;
+          }
+        }
+        & > .sub_description_appr > p {
+          font-size: 1em;
+        }
+        & > .title_container {
+          & > h3 {
+            font-size: 3em;
+          }
+          & > h3::after {
+            height: 7px;
+          }
+        }
+        & > .container {
+          & > .grid {
+            grid-gap: 15px;
+            grid-template-columns: auto auto;
+            grid-template-rows: 260px 260px;
+            & > .li {
+              padding: 15px;
+              & > .cr_comp {
+                & > img {
+                  height: 100px;
+                }
+              }
+              & > .title_comp {
+                height: fit-content;
+                padding: 5px;
+                & > h4 {
+                  font-size: 1.1em;
+                  text-align: center;
+                }
+              }
+              & > .description_comp {
+                padding: 5px;
+                height: fit-content;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Navigation bar*/
+  .nav_container {
+    & > div {
+      & > nav {
+        & > nav {
+          & > .nav-links {
+              & > .links {
+                & > a,
+                & > .dropdown > a {
+                  color: #ededed;
+                }
+                & > .quote-button > a {
+                  color: #ededed;
+                }
+                & > .dropdown {
+                  & > .dropdown-menu > a,
+                  & > .sub-dropdown > a {
+                    color: #ededed;
+                  }
+                  & > .dropdown-menu,
+                  & > .dropdown-menu > .sub-dropdown {
+                    background-color: transparent;
+                    & > a {
+                      color: #ededed;
+                    }
+                  }
+                  & > .dropdown-menu > .sub-dropdown {
+                    top: 0;
+                    left: 20%;
+                  }
+                }
+              }
+          }
+          & > .menu-toggle {
+            & > div {
+              background-color: #001627;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* About landing container title */
+  .abt_landing {
+    & > .transparent {
+      & > h3,
+      & > p {
+        font-size: 3em;
+      }
+      & > p {
+        font-size: 1em!important;
+      }
+    }
+  }
+
+  /* About overview intro */
+  .abt_intro {
+    width: 95%;
+    padding: 25px 10px 10px 10px;
+  }
+
+  /* Our story section | Who Are We container style(ab_vo container) */
+  .stry_container {
+    width: 95%;
+  }
+  /* Our story section 2 */
+  .addition_dit {
+    height: fit-content;
+    width: 95%;
+    padding: 15px 0;
+    flex-direction: column-reverse;
+    & > .ddimg_container {
+      width: 100%;
+      height: 220px;
+      display: flex;
+      justify-content: center;
+      & > img {
+        height: 200px;
+      }
+      & > #img1 {
+        margin: 15px 0 0 45px;
+      }
+    }
+    & > .story_container {
+      width: 100%;
+      & > div > p {
+        text-align: center;
+        font-size: 1em;
+      }
+      & > div {
+        & > ul > li {
+          font-size: 1em;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  /* Core values */
+  .val_container {
+    padding: 0 20px;
+    & > .val_in_cont {
+      width: 95%;
+      flex-direction: column-reverse;
+      & > .values {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 30px 15px;
+        grid-template-areas: 
+          "cr1"
+          "cr2" 
+          "cr3" 
+          "cr4";
+        & > .cr {
+          & > h5 {
+            font-size: 1.3em;
+          }
+          & > p {
+            font-size: 1em;
+          }
+        }
+      }
+      & > .val_title {
+        width: fit-content;
+        height: fit-content;
+        justify-self: center;
+        & > h3 {
+          font-size: 2.7em;
+          text-align: center;
+          &::after {
+            height: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Vision and Mission */
+  .vismis_container {
+    & > .main_vimi {
+      flex-direction: column;
+      width: 95%;
+      & > .vision_,
+      & > .mission_ {
+        padding: 0;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        & > h3 {
+          font-size: 2.7em;
+          text-align: center;
+        }
+        & > p,
+        & > ul > li {
+          font-size: 1em;
+          text-align: center;
+          list-style-type: none;
+        }
+      }
+    }
+    & > .extra_vimi {
+      width: 95%;
+      & > p {
+        font-size: 1em;
+      }
+    }
+  }
+
+  /* Industrial Solutions | H3 style from Who Are We */
+  .ind_container {
+    & > .ind_ {
+      width: 95%;
+      & > .title_container {
+        & > h3 {
+          font-size: 2.7em;
+        }
+      }
+      & > .solutions_cont {
+        padding: 0;
+        & > .grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          grid-gap: 20px;
+          & > .li {
+            padding: 0 25px;
+            width: 400px;
+            & > .container {
+              & > .lil_title,
+              & > .description {
+                font-size: 1.25em;
+                &::after {
+                  bottom: -15px;
+                }
+              }
+              & > .description {
+                font-size: 1.1em!important;
+              }
+              & > div {
+                margin: 30px 0;
+              }
+            }
+          }
+          & > .li::after {
+            font-size: 1.2em;
+            left: 50%;
+            top: -12%;
+            height: 50px;
+            width: 50px;
+          }
+          & > .mid_cr {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* Certifications & Compliance */
+  .cert_container {
+    & > .transparent {
+      & > .main_cert {
+        & > .sub_description {
+          width: 95%;
+          & > p {
+            font-size: .9em;
+          }
+        }
+        & > .sub_description_appr > p {
+          font-size: 1em;
+        }
+        & > .title_container {
+          & > h3 {
+            font-size: 2.4em;
+          }
+          & > h3::after {
+            height: 7px;
+          }
+        }
+        & > .container {
+          & > .grid {
+            grid-gap: 10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            & > .li {
+              padding: 0;
+              width: 420px;
+              & > .cr_comp {
+                & > img {
+                  height: 130px;
+                }
+              }
+              & > .title_comp {
+                & > h4 {
+                  font-size: 1.2em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* About landing container title */
+  .abt_landing {
+    & > .transparent {
+      & > h3,
+      & > p {
+        font-size: 2.5em;
+      }
+      & > p {
+        font-size: .9em!important;
+      }
+    }
+  }
+
+  /* About overview intro | Good*/
+
+  /* Our story section | Who Are We container style(ab_vo container) */
+  .ab_ov_container {
+    & > .whoawi_container > .image_container, & > .vs_container > .image_container {
+        & > img {
+            height: 170px;
+        }
+    }
+  }
+
+  /* Our story section 2 */
+  .addition_dit {
+    padding: 20px 0;
+    & > .ddimg_container {
+      height: 200px;
+      & > img {
+        height: 160px;
+      }
+      & > #img1 {
+        margin: 15px 0 0 45px;
+      }
+    }
+  }
+
+  /* Core values */
+  .val_container {
+    & > .val_in_cont {
+      & > .values {
+        padding: 5px;
+        & > .cr {
+          & > h5 {
+            font-size: 1.2em;
+          }
+          & > p {
+            font-size: 1em;
+          }
+        }
+      }
+      & > .val_title {
+        & > h3 {
+          font-size: 2.4em;
+        }
+      }
+    }
+  }
+
+  /* Vision and Mission */
+  .vismis_container {
+    & > .main_vimi {
+      & > .vision_, 
+      & > .mission_ {
+        & > h3 {
+          font-size: 2.4em;
+        }
+      }
+    }
+  }
+
+  /* Industrial Solutions | H3 style from Who Are We */
+  .ind_container {
+    & > .ind_ {
+      overflow: hidden;
+      & > .title_container {
+        & > h3 {
+          font-size: 2.4em;
+        }
+      }
+      & > .solutions_cont {
+        & > .grid {
+          & > .li {
+            width: 90%;
+            margin: 0 auto;
+            & > .container {
+              & > .lil_title,
+              & > .description {
+                font-size: 1em;
+              }
+              & > .description {
+                font-size: 1em!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Certifications & Compliance */
+  .cert_container {
+    & > .transparent {
+      & > .main_cert {
+        & > .sub_title {
+          & > p {
+            font-size: .8em;
+          }
+        }
+        & > .sub_description {
+          width: 95%;
+        }
+        & > .sub_description_appr > p {
+          font-size: 1em;
+        }
+        & > .container {
+          & > .grid {
+            & > .li {
+              padding: 0;
+              width: fit-content;
+              & > .cr_comp {
+                & > img {
+                  height: 120px;
+                }
+              }
+              & > .description_comp {
+                & > p {
+                  font-size: 1em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}  
+
+@media screen and (max-width: 320px) {
+  /* About landing container title | Good*/
+
+  /* About overview intro */
+  .abt_intro {
+    width: 80%;
+    & > div > p {
+      font-size: 1em;
+    }
+  }
+
+  .stry_container_abt {
+    & > .whoawi_container > .image_container,
+    & > .vs_container > .image_container {
+      & > img {
+          height: 150px;
+      }
+    }
+  }
+
+  /* Our story section | Who Are We container style(ab_vo container) */
+
+  /* Our story section 2 */
+  .addition_dit {
+    padding: 10px 0;
+    & > .ddimg_container {
+      height: 180px;
+      & > img {
+        height: 90px;
+      }
+    }
+    & > .story_container {
+      width: 100%;
+      & > div > p {
+        font-size: 1em;
+      }
+    }
+  }
+
+  /* Core values */
+  .val_container {
+    & > .val_in_cont {
+      & > .values {
+        & > .cr {
+          & > h5 {
+            font-size: 1em;
+          }
+          & > p {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  /* Vision and Mission | Done*/
+
+  /* Industrial Solutions | H3 style from Who Are We */
+  .ind_container {
+    & > .ind_ {
+      & > .solutions_cont {
+        & > .grid {
+          & > .li {
+            width: 90%;
+            margin: 0 auto;
+            & > .container {
+              & > .lil_title,
+              & > .description {
+                font-size: 1em;
+              }
+              & > .description {
+                font-size: 1em!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Certifications & Compliance */
+  .cert_container {
+    & > .transparent {
+      & > .main_cert {
+        & > .container {
+          & > .grid {
+            & > .li {
+              & > .cr_comp {
+                & > img {
+                  height: 90px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}  
