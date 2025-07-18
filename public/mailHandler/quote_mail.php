@@ -3,10 +3,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dotenv\Dotenv;
 
-require '../../chinata_2025/vendor/autoload.php';
+require '../../vendor/autoload.php';
 
 // Load environment variables
-$dotenv = Dotenv::createImmutable(__DIR__ . '/../../chinata_2025/');
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../../');
 $dotenv->load();
 
 header("Access-Control-Allow-Origin: *");

@@ -13,9 +13,9 @@
     <meta property="og:url" content="https://www.chinatagroup.co.za/engineering">
     <meta property="og:type" content="website">
     <link rel="icon" href="../IMAGES/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles_home.css" type="text/css"/>
-    <link rel="stylesheet" href="css/about.css" type="text/css"/>
-    <link rel="stylesheet" href="css/services_eng.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset('css/styles_home.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset('css/about.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset('css/services_eng.css') }}" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="canonical" href="https://www.chinatagroup.co.za/engineering" />
@@ -139,9 +139,8 @@
       </div>
     </section>
     <footer class="footer" id="footer_container" data-logo="default.png"></footer>
-    <script src="js/footer.js"></script>
-    <script src="js/nav_ddw.js"></script>
-
+    <script src="{{ asset('js/footer.js') }}"></script>
+    <script src="{{ asset('js/nav_ddw.js') }}"></script>
     <!-- <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/smooth_eng.js"></script> -->
   </body>
